@@ -1,0 +1,65 @@
+@import './variables';
+
+.footer {
+  padding: 0 16px 20px 16px;
+
+  @media (max-width: $sm-max) {
+    padding: 0 0 20px 0;
+  }
+
+  .dot {
+    &:after {
+      content: '.';
+      color: $grey-1;
+      font-size: 38px;
+      line-height: 10px;
+    }
+  }
+
+  .link {
+    color: $grey-1;
+    font-size: 14px;
+    padding: 5px 10px;
+    text-decoration: none;
+
+    &:hover {
+      color: $dark-background-color;
+      text-decoration: none;
+    }
+
+    &.no-hover {
+      &:hover {
+        color: $grey-1;
+        text-decoration: none;
+      }
+    }
+  }
+
+  .knowledge-container {
+    color: $grey-1;
+    font-size: 12px;
+
+    .heading {
+      font-size: 14px;
+      font-weight: 600;
+      margin: 10px 0 5px 0;
+    }
+  }
+
+  .developer-container {
+    color: $text-muted;
+    font-size: 14px;
+    padding: 3px 0;
+    text-align: center;
+
+    a,
+    a:hover {
+      color: $text-muted;
+    }
+
+    .heart {
+      color: $heart-color;
+      margin: 0 3px;
+    }
+  }
+}

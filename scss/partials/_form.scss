@@ -1,0 +1,24 @@
+@import './partials/variables';
+
+.form-container {
+  iframe {
+    overflow: hidden;
+    height: 100%;
+    width: 100%;
+  }
+}
+
+textarea {
+  min-height: 100px;
+  resize: vertical;
+}
+
+.required {
+  position: relative;
+
+  &:after {
+    color: $red-color;
+    content: '*';
+    margin-left: 5px;
+  }
+}

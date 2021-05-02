@@ -1,0 +1,15 @@
+@import './partials/variables';
+
+@import './style.scss';
+
+.contact-form-wrapper {
+  height: 600px;
+  padding: 35px 0;
+
+  @media (max-width: $sm-max) {
+    height: 680px;
+    padding: 20px 0;
+  }
+}
+
+@import './partials/testimonial';

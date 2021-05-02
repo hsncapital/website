@@ -1,0 +1,274 @@
+@import './partials/variables';
+
+html,
+body {
+  background-color: $default-background-color;
+  color: $default-color;
+  cursor: default;
+  font-family: Lato, Arial, sans-serif;
+  height: 100%;
+}
+
+.h-60 {
+  height: 60%;
+}
+
+.cursor-default {
+  cursor: default;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+// Button
+.app-button {
+  color: $white-color;
+  background-color: $dark-background-color;
+  border-color:$dark-background-color;
+  padding: 5px 20px;
+
+  &:hover {
+    color: $dark-background-color;
+    background-color: inherit;
+  }
+
+  &.app-button-round {
+    border-radius: 20px;
+  }
+
+  &.app-btn-sm {
+    font-size: 14px;
+    padding: 2px 15px;
+  }
+}
+
+.btn:focus {
+  box-shadow: none;
+}
+
+.hr {
+  border-color: $light-background-color;
+}
+
+.banner-image {
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+
+  .overlay {
+    background: rgba(0,0,0,0.15);
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    opacity: 1;
+    -webkit-transition: all 0.4s ease-in-out 0s;
+    -moz-transition: all 0.4s ease-in-out 0s;
+    transition: all 0.4s ease-in-out 0s;
+  }
+
+  &.home-image {
+    background: url($image-url + '/bg1.jpeg');
+    background-position: top;
+
+    .overlay {
+      background: rgba(0,0,0,0.35); 
+    }
+  }
+
+  &.banner1-image {
+    background: url($image-url + '/banner1.jpeg');
+    background-position: top;
+  }
+
+  &.banner2-image {
+    background: url($image-url + '/banner2.jpeg');
+    background-position: top;
+  }
+
+  &.banner3-image {
+    background: url($image-url + '/banner3.jpeg');
+    background-position: top;
+  }
+
+  &.banner4-image {
+    background: url($image-url + '/banner4.jpeg');
+    background-position: top;
+  }
+
+  &.banner5-image {
+    background: url($image-url + '/banner5.jpeg');
+    background-position: top;
+  }
+
+  &.banner6-image {
+    background: url($image-url + '/banner6.jpeg');
+    background-position: top;
+  }
+
+  &.banner7-image {
+    background: url($image-url + '/banner7.jpeg');
+    background-position: top;
+  }
+
+  &.banner8-image {
+    background: url($image-url + '/banner8.jpeg');
+    background-position: top;
+  }
+}
+
+.banner-container {
+  padding-top: 220px;
+  position: relative;
+}
+
+// Sebi Container
+.sebi-not-regis-banner {
+  background-color: $dark-background-color;
+  color: $white-color;
+  font-size: 21px;
+  font-weight: 500;
+  padding: 16px 32px;
+  text-align: center;
+}
+
+.shadow {
+  box-shadow: 0 0 16px 0 $box-shadow-1;
+}
+
+.border-none {
+  border: 0;
+}
+
+.container-heading {
+  font-size: 32px;
+  line-height: 32px;
+  text-align: center;
+}
+
+.heading-border {
+  &:after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 3px;
+    background: $highlighter-color;
+    margin: 10px auto  0 auto;
+  }
+
+  &.left {
+    &:after {
+      margin: 10px 0;
+    }
+  }
+}
+
+.notifying-text {
+  font-size: 14px;
+}
+
+.modal-content {
+  .modal-header {
+    .close {
+      font-size: 28px;
+    }
+  }
+
+  .modal-body {
+    position: relative;
+
+    .close {
+      color: $white-color;
+      font-size: 42px;
+      opacity: 1;
+      position: absolute;
+      right: -35px;
+      top: -10px;
+
+      @media (max-width: $sm-max) {
+        color: $default-color;
+        right: 10px;
+        top: 0;
+      }
+    }
+  }
+}
+
+.text-default {
+  color: $default-color;
+
+  &:hover {
+    color: $default-color;
+  }
+}
+
+#telegram-modal {
+  .content-wrapper {
+    width: 100%;
+
+    @media (min-width: $md-min) {
+      display: flex;
+    }
+  }
+
+  .telegram-icon {
+    background-image: url('../images/telegram.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding: 40px;
+  }
+
+  .main-text {
+    background-color: $light-background-color;
+    padding: 60px 0;
+    text-align: center;
+
+    @media (min-width: $md-min) {
+      background-color: inherit;
+      padding: 100px 0;
+      width: 60%;
+    }
+
+    .highlight {
+      font-size: 48px;
+      font-weight: 700;
+      text-transform: uppercase;
+
+      &.telegram {
+        color: $telegram-color;
+      }
+    }
+  }
+
+  .join-us-person-wrapper {
+    display: none;
+
+    @media (min-width: $md-min) {
+      display: block;
+      width: 40%;
+    }
+
+    .join-us-person {
+      background-image: url('../images/join-us-person.png');
+      background-repeat: no-repeat;
+      background-size: cover;
+      border-radius: 10px;
+      height: 100%;
+    }
+  }
+}
+
+@import './partials/navbar';
+@import './partials/footer';
+@import './partials/social-link';
+@import './partials/page-heading';
+@import './partials/service';
+@import './partials/contact';

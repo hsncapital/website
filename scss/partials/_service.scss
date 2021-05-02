@@ -1,0 +1,100 @@
+@import './variables';
+
+.services-container {
+  background-color: $dark-background-color;
+  padding: 50px 0;
+
+  .container-heading {
+    color: $white-color;
+    padding-bottom: 25px;
+  }
+
+  &.light {
+    background-color: $light-background-color;
+
+    .container-heading {
+      color: $default-color;
+    }
+  }
+
+  &.default {
+    background-color: $default-background-color;
+    padding: 25px 0;
+
+    .container-heading {
+      color: $default-color;
+    }
+  }
+
+  .service-card {
+    background-color: $white-color;
+    border-radius: 10px;
+    border: 0;
+    box-shadow: 0 0 16px 0 $box-shadow-1;
+    text-align: center;
+
+    @media (max-width: $sm-max) {
+      margin: 0 auto;
+      width: 80%;
+    }
+
+    .heading {
+      text-align: center;
+      font-size: 20px;
+      font-weight: 500;
+    }
+
+    .content {
+      text-align: center;
+      font-size: 14px;
+      overflow: hidden;
+      margin: 10px 0;
+      text-overflow: ellipsis;
+    }
+
+    .button-wrapper {
+      margin: 10px 0;
+    }
+  }
+
+  .horizontal-layout {
+    display: flex;
+    justify-content: center;
+
+    @media (max-width: $sm-max) {
+      justify-content: start;
+    }
+
+    .service-card {
+      margin: 10px;
+      width: 30%;
+
+      @media (max-width: $sm-max) {
+        min-width: 260px;
+        width: auto;
+      }
+    }
+
+    .no-element {
+      padding: 1px;
+    }
+  }
+
+  .horizontal-scroll-xs {
+    @media (max-width: $sm-max) {
+      display: flex;
+      flex-wrap: nowrap;
+      overflow: -moz-scrollbars-none;
+      -webkit-overflow-scrolling: touch;
+      -ms-overflow-style: none;
+      overflow-x: scroll;
+      overflow-y: hidden;
+      white-space: nowrap;
+
+      &::-webkit-scrollbar,
+      &::-webkit-scrollbar-thumb {
+        display: none;
+      }
+    }
+  }
+}

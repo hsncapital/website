@@ -1,0 +1,25 @@
+@import './variables';
+
+.contacting-container {
+  padding: 25px 0;
+
+  .contacting-card {
+    box-shadow: 0 0 16px 0 $box-shadow-1;
+    border-radius: 10px;
+    padding: 20px;
+  }
+
+  .phone-icon {
+    border: 1px solid $dark-background-color;
+    background-color: $light-background-color;
+    border-radius: 30px;
+    color: $dark-background-color;
+    font-size: 24px;
+    margin-right: 10px;
+    padding: 5px 15px;
+  }
+
+  .help-text {
+    font-size: 22px;
+  }
+}

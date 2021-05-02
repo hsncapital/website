@@ -1,0 +1,16 @@
+@import './partials/variables';
+
+@import './style.scss';
+
+.about-wrapper {
+  font-size: 18px;
+  margin: 0 auto;
+  padding: 25px 0;
+  width: 70%;
+
+  @media (max-width: $sm-max) {
+    width: 100%;
+  }
+}
+
+@import './partials/testimonial';

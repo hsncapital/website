@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Payment | HSN Capital</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="HSN Capital is an investment advisor firm and is not registered to sebi.">
+    <link rel="canonical" href="https://hsncapital.in" />
+    <meta name="robots" content="index, follow">
+
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="HSN Capital" />
+    <meta property="og:description" content="HSN Capital is an investment advisor firm and is not registered to sebi." />
+    <meta property="og:image" content="https://hsncapital.in/images/logo.png" />
+    <meta property="og:url" content="https://hsncapital.in" />
+    <meta property="og:site_name" content="HSN Capital" />
+
+    <meta name="twitter:title" content="HSN Capital">
+    <meta name="twitter:description" content="HSN Capital is an investment advisor firm and is not registered to sebi.">
+    <meta name="twitter:image" content="https://hsncapital.in/images/logo.png">
+    <meta name="twitter:site" content="HSN Capital">
+    <meta name="twitter:creator" content="HSN Capital">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="./css/payment.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="icon" href="./images/icon.png" type="image/png" sizes="16x16">
+  </head>
+  <body>
+    <div id="app-info-bar"></div>
+    <div id="app-header"></div>
+
+    <!-- Content -->
+    <div class="heading-wrapper">
+      <div class="page-heading">
+        Payment
+      </div>
+      <!-- <img src="./images/payment.png" class="page-img img-fluid"> -->
+    </div>
+    <!-- / Content -->
+
+    <div class="payment-options">
+      <div class="container">
+        <div class="d-flex align-items-center justify-content-center flex-column">
+          <div class="row align-items-center justify-content-center w-100">
+            <div class="col-md-4">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th colspan="2" class="table-heading text-center text-uppercase">Account Detail</th>
+                  </tr>
+                </thead>
+                
+                <tbody>
+                  <tr>
+                    <td class="strong">Name</td>
+                    <td>Airtel Bank</td>
+                  </tr>
+                  <tr>
+                    <td class="strong">Account Number</td>
+                    <td>9792661881</td>
+                  </tr>
+                  <tr>
+                    <td class="strong">IFSC</td>
+                    <td>AIRP0000001</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <div class="col-md-1 text-center text-muted text-uppercase my-2">OR</div>
+
+            <div class="col-md-4">
+              <table class="table text-center">
+                <thead>
+                  <tr>
+                    <th colspan="2" class="table-heading text-uppercase">Upi Id</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="strong">hsncapital@airtel</td>
+                  </tr>
+                  <tr>
+                    <td class="strong">9792661881@paytm</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <div class="text-muted text-uppercase my-2">OR</div>
+          <button type="button" class="btn app-button app-button-round" data-toggle="modal" data-target="#upiModal">UPI QR Code</button>
+          <div class="text-muted text-uppercase my-2">OR</div>
+          <a href="https://p.paytm.me/xCTH/4b42b88e" class="btn app-button app-button-round" target="_blank">Pay with Paytm</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade upi-modal" id="upiModal">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header d-md-none">
+            <h5 class="modal-title">UPI QR Code</h5>
+            <button type="button" class="btn close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <button type="button" class="btn close d-none d-md-block" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+            <img src="./images/upi.jpeg" class="img-fluid">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <hr class="hr my-2"/>
+    </div>
+    
+    <div id="contact-box"></div>
+    <div id="sebi-not-register-container"></div>
+    <div id="app-footer"></div>
+    <div id="join-telegram-modal"></div>
+
+    <script src="./js/default-bundle.js"></script>
+    <script>
+      $(document).ready(function() {
+        window.app.initialize(window.constant.PAGES.PAYMENT);
+      });
+    </script>
+    <script type="text/javascript">
+      const clarityId = window.constant.CLARITY_ID;
+      (function(c,l,a,r,i,t,y){
+          c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+          t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+          y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+      })(window, document, "clarity", "script", clarityId);
+    </script>
+  </body>
+</html>

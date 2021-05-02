@@ -1,0 +1,84 @@
+@import './variables';
+
+.quote-wrapper {
+  padding: 20px 0;
+
+  .quote {
+    text-align: center;
+
+    .marker {
+      font-size: 56px;
+    }
+
+    .lines {
+      font-size: 28px;
+    }
+
+    .by {
+      font-size: 22px;
+
+      &:before {
+        content: '-';
+        font-size: 26px;
+        margin-right: 10px;
+      }
+    }
+  }
+}
+
+.review-wrapper {
+  padding: 50px 0;
+  background-color: $light-background-color;
+
+  .container-heading {
+    padding-bottom: 30px;
+  }
+
+  .review {
+    text-align: center;
+
+    .image {
+      background-color: $default-image-placeholder;
+      background-position: center top;
+      background-size: cover;
+      border-radius: 50%;
+      display: block;
+      height: 80px;
+      width: 80px;
+    }
+
+    .name {
+      font-size: 22px;
+      margin-top: 5px;
+    }
+
+    .designation {
+      font-size: 16px;
+      margin-bottom: 5px;
+    }
+
+    .review-content {
+      font-size: 18px;
+      margin: 10px 0;
+      width: 75%;
+    }
+  }
+  
+  .owl-carousel {
+    .owl-dot {
+      &.active {
+        span {
+          background: $dark-background-color !important;
+        }
+      }
+    }
+  }
+}
+
+.owl-carousel {
+  .owl-dot {
+    &:focus {
+      outline: none;
+    }
+  }
+}

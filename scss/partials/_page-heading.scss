@@ -1,0 +1,31 @@
+@import './variables';
+
+.heading-wrapper {
+  background-color: $light-background-color;
+  color: $default-color;
+  padding: 50px 0;
+  position: relative;
+  text-align: center;
+
+  .page-heading {
+    font-size: 42px;
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+
+  .sub-heading {
+    font-size: 16px;
+    margin: 10px auto 0 auto;
+    width: 60%;
+
+    @media (max-width: $sm-max) {
+      width: 85%;
+    }
+  }
+
+  .page-img {
+    height: 230px;
+    margin-top: 10px;
+  }
+}
+

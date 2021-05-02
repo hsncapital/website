@@ -1,0 +1,150 @@
+@import './partials/variables';
+
+@import './style.scss';
+
+.level-container {
+  padding: 50px 0;
+
+  @media (max-width: $sm-max) {
+    padding: 20px 0;
+  }
+
+  .level-wrapper {
+    padding-bottom: 25px;
+
+    .heading {
+      font-size: 32px;
+      font-weight: 500;
+      line-height: 32px;
+      padding: 25px 0;
+    }
+  
+    .text {
+      margin: 0 auto;
+      width: 70%;
+      word-spacing: 3px;
+  
+      @media (max-width: $sm-max) {
+        width: 100%;
+      }
+    }
+  }
+}
+
+.tab-view {
+  border: 1px solid $light-background-color;
+  box-shadow: 0 0 16px 0 $box-shadow-1;
+
+  .nav-tabs {
+    .nav-link {
+      border: none;
+      border-radius: 0;
+      color: $default-color;
+      margin-right: 5px;
+      padding: 10px 15px;
+
+      @media (max-width: $sm-max) {
+        padding: 10px;
+      }
+
+      &.active,
+      &:hover {
+        background-color: $light-background-color;
+        color: $dark-background-color;
+      }
+    }
+  }
+
+  .tab-pane {
+    padding: 20px;
+
+    @media (max-width: $sm-max) {
+      padding: 20px 10px;
+    }
+  }
+}
+
+.journey-container {
+  .heading {
+    font-size: 32px;
+    line-height: 32px;
+    padding: 25px 0;
+    text-align: center;
+  }
+
+  .journey-wrapper {
+    padding-bottom: 25px;
+    font-size: 18px;
+    word-spacing: 3px;
+
+    @media (max-width: $sm-max) {
+      font-size: 16px;
+    }
+
+    .journey-image {
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      height: 250px;
+    }
+
+    .point {
+      @media (max-width: $sm-max) {
+        margin: 10px 0;
+      }
+
+      &::before {
+        font-size: 28px;
+        margin-right: 10px;
+        position: absolute;
+        left: -25px;
+
+        @media (max-width: $sm-max) {
+          font-size: 18px;
+          margin-right: 0;
+          position: relative;
+          left: 0;
+        }
+      }
+
+      &.point-1 {
+        &::before {
+          content: '1.'
+        }
+      }
+
+      &.point-2 {
+        &::before {
+          content: '2.'
+        }
+      }
+
+      &.point-3 {
+        &::before {
+          content: '3.'
+        }
+      }
+
+      &.point-4 {
+        &::before {
+          content: '4.'
+        }
+      }
+
+      &.point-5 {
+        &::before {
+          content: '5.'
+        }
+      }
+
+      &.point-6 {
+        &::before {
+          content: '6.'
+        }
+      }
+    }
+  }
+}
+
+@import './partials/testimonial';
+@import './partials/list';

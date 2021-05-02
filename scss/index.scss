@@ -1,0 +1,87 @@
+@import './partials/variables';
+
+@import './style.scss';
+
+.home-container {
+  padding: 40px 0 150px 0;
+  position: relative;
+
+  @media (max-width: $sm-max) {
+    padding: 0;
+  }
+
+  .quote {
+    color: $white-color;
+  }
+}
+
+.vision-mission-container {
+  display: flex;
+  padding: 40px 0;
+
+  @media (max-width: $sm-max) {
+    display: block;
+    padding: 15px 15px;
+  }
+
+  .text-box {
+    padding: 10px;
+    text-align: center;
+    width: 50%;
+
+    @media (max-width: $sm-max) {
+      width: 100%;
+    }
+
+    &.box-1 {
+      border-right: 1px solid $light-background-color;
+
+      @media (max-width: $sm-max) {
+        border-bottom: 1px solid $light-background-color;  
+        border-right: 0;
+        padding-bottom: 20px;
+      }
+    }
+
+    &.box-2 {
+      @media (max-width: $sm-max) {
+        padding-top: 20px;
+      }
+    }
+  }
+
+  .heading {
+    font-size: 32px;
+    line-height: 32px;
+    padding-bottom: 25px;
+  }
+
+  .image-wrapper {    
+    margin-bottom: 10px;
+
+    .vision-img {
+      height: 60px;
+    }
+  }
+
+  .text {
+    font-size: 18px;
+    margin: 0 auto;
+    width: 70%;
+
+    @media (max-width: $sm-max) {
+      width: 100%;
+    }
+  }
+}
+
+.contact-container {
+  padding: 50px 0;
+
+  .heading {
+    font-size: 20px;
+  }
+}
+
+
+@import './partials/testimonial';

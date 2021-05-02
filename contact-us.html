@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Contact Us | HSN Capital</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="HSN Capital is an investment advisor firm and is not registered to sebi.">
+    <link rel="canonical" href="https://hsncapital.in" />
+    <meta name="robots" content="index, follow">
+
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="HSN Capital" />
+    <meta property="og:description" content="HSN Capital is an investment advisor firm and is not registered to sebi." />
+    <meta property="og:image" content="https://hsncapital.in/images/logo.png" />
+    <meta property="og:url" content="https://hsncapital.in" />
+    <meta property="og:site_name" content="HSN Capital" />
+
+    <meta name="twitter:title" content="HSN Capital">
+    <meta name="twitter:description" content="HSN Capital is an investment advisor firm and is not registered to sebi.">
+    <meta name="twitter:image" content="https://hsncapital.in/images/logo.png">
+    <meta name="twitter:site" content="HSN Capital">
+    <meta name="twitter:creator" content="HSN Capital">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="./css/contact-us.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="icon" href="./images/icon.png" type="image/png" sizes="16x16">
+  </head>
+  <body>
+    <div id="app-info-bar"></div>
+    <div id="app-header"></div>
+
+    <!-- Content -->
+    <div class="heading-wrapper">
+      <div class="page-heading">
+        Contact Us
+      </div>
+
+      <!-- <img src="./images/contact-us.png" class="page-img img-fluid"> -->
+    </div>
+
+    <div class="container">
+      <div class="contact-form-wrapper form-container">
+        <iframe src="./iframe/contact-form.html" scrolling="no" width="100%" height="100%" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+      </div>
+    </div>
+    <!-- / Content -->
+
+    <div id="sebi-not-register-container"></div>
+    <div id="app-footer"></div>
+    <div id="join-telegram-modal"></div>
+
+    <script src="./js/default-bundle.js"></script>
+    <script>
+      $(document).ready(function() {
+        window.app.initialize(window.constant.PAGES.CONTACT_US);
+      });
+    </script>
+    <script type="text/javascript">
+      const clarityId = window.constant.CLARITY_ID;
+      (function(c,l,a,r,i,t,y){
+          c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+          t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+          y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+      })(window, document, "clarity", "script", clarityId);
+    </script>
+  </body>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Contact Form</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="HSN Capital is an investment advisor firm and is not registered to sebi.">
+    <link rel="canonical" href="https://hsncapital.in" />
+    <meta name="robots" content="index, follow">
+
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="HSN Capital" />
+    <meta property="og:description" content="HSN Capital is an investment advisor firm and is not registered to sebi." />
+    <meta property="og:image" content="https://hsncapital.in/images/logo.png" />
+    <meta property="og:url" content="https://hsncapital.in" />
+    <meta property="og:site_name" content="HSN Capital" />
+
+    <meta name="twitter:title" content="HSN Capital">
+    <meta name="twitter:description" content="HSN Capital is an investment advisor firm and is not registered to sebi.">
+    <meta name="twitter:image" content="https://hsncapital.in/images/logo.png">
+    <meta name="twitter:site" content="HSN Capital">
+    <meta name="twitter:creator" content="HSN Capital">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="../css/iframe-form.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="icon" href="./images/icon.png" type="image/png" sizes="16x16">
+  </head>
+  <body>
+    <!-- Form: https://docs.google.com/forms/d/e/1FAIpQLScKe7nYhzQhnpMvs7S9dbZZ_21sQTjEAwWnnNp_XV8wB4RHyA/viewform -->
+    <div id="external-links"></div>
+    <div class="small text-muted mx-3 my-2 text-center"> OR </div>
+    <div class="row justify-content-center flex-wrap">
+      <div class="col-sm-8">
+        <form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLScKe7nYhzQhnpMvs7S9dbZZ_21sQTjEAwWnnNp_XV8wB4RHyA/formResponse" method="post" class="form">
+          <div class="form-group">
+            <label for="fullName" class="required">Full Name</label>
+            <input type="text" class="form-control" id="fullName" name="entry.1904972371" required>
+          </div>
+          <div class="form-group">
+            <label for="phoneNumber" class="required">Mobile Number</label>
+            <input type="text" class="form-control" id="phoneNumber" name="entry.1516708778" required>
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" class="form-control" id="email" name="entry.1759311338">
+          </div>
+          <div class="form-group">
+            <label for="query">Query</label>
+            <textarea class="form-control" id="query" name="entry.1559067185"></textarea>
+          </div>
+          <div class="text-center">
+            <button type="submit" class="btn app-button app-button-round w-50">Submit</button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <script src="../js/default-bundle.js"></script>
+    <script>
+      $(document).ready(function() {
+        window.contact.renderOnlyExternalLinks('#external-links');
+      });
+
+      document.oncontextmenu = function() { 
+        return false; 
+      };
+    </script>
+  </body>
+</html>
