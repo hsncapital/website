@@ -13,7 +13,8 @@ window.constant = function () {
     TRAINING_L2: 'level2',
     JOURNEY_WITH_US: 'journey-with-us',
     TRADING: 'trading',
-    SERVICES: 'services'
+    SERVICES: 'services',
+    DEMAT_ACCOUNT: 'demat-account'
   };
   const HOME_PAGE = {
     id: PAGES.HOME,
@@ -86,6 +87,12 @@ window.constant = function () {
     url: './training.html#journey-with-us'
   };
 
+  const DEMAT_ACCOUNT = {
+    id: PAGES.DEMAT_ACCOUNT,
+    name: 'Open Demat Account',
+    url: 'https://upstox.com/open-demat-account/?f=ET2875'
+  };
+
   const SOCIAL_LINKS = [
     {
     name: 'Facebook',
@@ -111,8 +118,8 @@ window.constant = function () {
   }
 
   const obj = {
-    HOME_PAGE, ABOUT_PAGE, PAYMENT_PAGE, CONTACT_US, EQUITY_CASH_PAGE, FUTURE_N_OPTION_PAGE, INDEX_SPECIAL_PAGE, COMMODITY_PAGE, PAGES, SOCIAL_LINKS,
-    MAIN_PAGES: [HOME_PAGE, ABOUT_PAGE, PAYMENT_PAGE, CONTACT_US],
+    HOME_PAGE, ABOUT_PAGE, PAYMENT_PAGE, CONTACT_US, EQUITY_CASH_PAGE, FUTURE_N_OPTION_PAGE, INDEX_SPECIAL_PAGE, COMMODITY_PAGE, PAGES, SOCIAL_LINKS, DEMAT_ACCOUNT,
+    MAIN_PAGES: [HOME_PAGE, ABOUT_PAGE, PAYMENT_PAGE, CONTACT_US, DEMAT_ACCOUNT],
     SERVICE_PAGES: [EQUITY_CASH_PAGE, FUTURE_N_OPTION_PAGE, INDEX_SPECIAL_PAGE, COMMODITY_PAGE],
     TRAINING_PAGES: [TRAINING_L1_PAGE, TRAINING_L2_PAGE, JOURNEY_WITH_US],
     NAVIGATION: [
