@@ -30,7 +30,7 @@ window.contact = function() {
           Facing Issue with our service
           <a class="btn app-button app-button-round app-btn-sm ml-3" href="./contact-us.html">Contact Us</a>
 
-          <a class="btn app-button app-button-round app-btn-sm ml-3 my-2 my-sm-0" href="${window.constant.DEMAT_ACCOUNT.url}">${window.constant.DEMAT_ACCOUNT.name}</a>
+          <a class="btn app-button app-button-round app-btn-sm ml-3 my-2 my-sm-0" href="${window.constant.DEMAT_ACCOUNT.url}" target="_blank">${window.constant.DEMAT_ACCOUNT.name}</a>
         </div>
         <div class="social-links">${getSocialLinks()}</div>
       </div>

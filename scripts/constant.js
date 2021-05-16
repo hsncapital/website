@@ -131,7 +131,9 @@ window.constant = function () {
       CONTACT_US
     ],
     trim,
-    CLARITY_ID: "6iv4l0qdpm"
+    CLARITY_ID: "6iv4l0qdpm",
+    TAWK_TO_KEY_1: "608f73125eb20e09cf38af7d",
+    TAWK_TO_KEY_2: "1f4o5j06e"
   };
   // || "6faf2w32y5"
 
